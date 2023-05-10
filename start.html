@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Formulario de registro</h1>
+    <form>
+      <label for="Correo_Electronico">Correo Electronico:</label>
+      <input type="email" name="Correo_Electronico" placeholder="ejemplo@develhope.com">
+      <br></br> 
+      <label for="Contraseña">Contraseña:</label>
+      <input type="password" name="Contraseña" placeholder="************">
+      <br></br> 
+      <label for="Nombre_Apellido">Nombre y Apellido:</label>
+      <input type="text" name="Nombre_Apellido" placeholder="Ej: Carlos Stanicio">
+      <br></br>
+      <label for="Fecha_Nacimiento">Fecha de Nacimiento</label>
+      <input type="date" name="Fecha_Nacimiento">
+      <br></br>
+      <label for="Numero_Telefono">Numero de Telefono:</label>
+      <input type="tel" name="Numero_Telefono" placeholder="655*******">
+      <br></br>
+      <label for="Eleccion_Planes">Eliga su plan:</label>
+      <select name="Eleccion_Planes" id="Eleccion_Planes"> 
+        <option value="Plan_Gratuito">Plan Gratuito -$0</option>
+        <option value="Plan_Pareja">Plan Pareja -$100</option>
+        <option value="Plan_Grupo">Plan Grupo -$200</option>
+      </select>
+      <br></br>
+      <label for="Plan_Pro">Plan Pro <input type="checkbox" name="Plan_Pro"value="Agregar"></label> 
+      <br></br>
+      <label for="Tarjeta_Credito">Numero de Tarjeta de Credito:</label>
+      <input type="number" maxlength="16">
+      <br></br>
+      <label for="CVC">CVC:</label>
+      <input type="number" maxlength="3">
+      <br></br>
+      <label for="Fecha_Caducidad">Fecha de Caducidad (MM/AA):</label>
+      <input type="month" name="Fecha_Caducidad">
+      <br></br>
+      <label for="Direccion_Envio">Direccion de envio:</label>
+      <input type="text" name="Direccion_Envio" placeholder="Calle San Jose Nr 3, 1ra"> 
+      <br></br>
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
